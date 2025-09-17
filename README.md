@@ -15,66 +15,67 @@ Antes de rodar o projeto, instale em sua máquina:
    ```bash
    git clone https://github.com/xdanielcvmr/xbox-mini-hub.git
    cd xbox-mini-hub
-Instalar dependências PHP
+   ```
 
-bash
-Copiar código
-composer install
-Instalar dependências front-end
+2. Instalar dependências PHP  
+   ```bash
+   composer install
+   ```
 
-bash
-Copiar código
-npm install
-Criar o arquivo de configuração
+3. Instalar dependências front-end  
+   ```bash
+   npm install
+   ```
 
-bash
-Copiar código
-cp .env.example .env
-Ajustar o .env para SQLite
+4. Criar o arquivo de configuração  
+   ```bash
+   cp .env.example .env
+   ```
 
-env
-Copiar código
-DB_CONNECTION=sqlite
-DB_DATABASE=database/database.sqlite
-Criar o banco de dados
+5. Ajustar o .env para SQLite  
+   ```env
+   DB_CONNECTION=sqlite
+   DB_DATABASE=database/database.sqlite
+   ```
 
-bash
-Copiar código
-touch database/database.sqlite
-Gerar a chave da aplicação
+6. Criar o banco de dados  
+   ```bash
+   touch database/database.sqlite
+   ```
 
-bash
-Copiar código
-php artisan key:generate
-Rodar as migrations + seeders
+7. Gerar a chave da aplicação  
+   ```bash
+   php artisan key:generate
+   ```
 
-bash
-Copiar código
-php artisan migrate --seed
-Criar link simbólico para uploads (capas dos jogos)
+8. Rodar as migrations + seeders  
+   ```bash
+   php artisan migrate --seed
+   ```
 
-bash
-Copiar código
-php artisan storage:link
-Subir o servidor Laravel
+9. Criar link simbólico para uploads (capas dos jogos)  
+   ```bash
+   php artisan storage:link
+   ```
 
-bash
-Copiar código
-php artisan serve
-Compilar os arquivos CSS e JS
+10. Subir o servidor Laravel  
+    ```bash
+    php artisan serve
+    ```
 
-bash
-Copiar código
-npm run dev
-Usuários criados pelo seeder
-Admin
+11. Compilar os arquivos CSS e JS  
+    ```bash
+    npm run dev
+    ```
 
-Email: admin@example.com
+---
 
-Senha: admin123
+## Usuários criados pelo seeder
 
-Usuário comum
+- **Admin**  
+  - Email: `admin@example.com`  
+  - Senha: `admin123`  
 
-Email: user@example.com
-
-Senha: senha123
+- **Usuário comum**  
+  - Email: `user@example.com`  
+  - Senha: `senha123`
