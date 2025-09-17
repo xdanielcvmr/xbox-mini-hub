@@ -1,0 +1,200 @@
+/* ============================
+   ESTILO ADMIN
+============================ */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #111;
+    color: #fff;
+}
+
+.admin-header h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.admin-header .btn-green {
+    background: #107C10;
+    padding: 8px 14px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.admin-header .btn-green:hover {
+    background: #0e6a0e;
+}
+
+/* Container principal */
+.admin-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Tabela */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.admin-table th, 
+.admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-table th {
+    background: #f0f0f0;
+    font-weight: 600;
+}
+
+.admin-table tr:hover {
+    background: #fafafa;
+}
+
+.no-cover {
+    font-size: 12px;
+    color: #999;
+}
+
+/* Ações */
+.actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.inline-form {
+    display: inline;
+}
+
+.btn-view,
+.btn-edit,
+.btn-delete {
+    padding: 6px 10px;
+    font-size: 13px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Botões específicos */
+.btn-view {
+    background: #0078d7;
+    color: white;
+}
+
+.btn-view:hover {
+    background: #005fa3;
+}
+
+.btn-edit {
+    background: #f0ad4e;
+    color: white;
+}
+
+.btn-edit:hover {
+    background: #ec971f;
+}
+
+.btn-delete {
+    background: #d9534f;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #c9302c;
+}
+
+/* Paginação */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 25px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pagination li {
+    display: inline-block;
+}
+
+.pagination a,
+.pagination span {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    transition: background 0.2s ease, color 0.2s ease;
+    font-size: 14px;
+}
+
+.pagination a:hover {
+    background: #f0f0f0;
+}
+
+.pagination .active span {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+}
+
+/* Barra de ações no admin */
+.admin-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Barra de pesquisa */
+
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.search-form input {
+    border: none;
+    outline: none;
+    padding: 6px 8px;
+    font-size: 14px;
+    width: 220px;
+}
+
+.search-form button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+

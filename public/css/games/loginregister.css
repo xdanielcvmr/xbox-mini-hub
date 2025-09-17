@@ -1,0 +1,116 @@
+/* ============================
+   ESPAÇAMENTO E FONTE
+============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #111;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* ============================
+   CABEÇALHO
+============================ */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+}
+
+/* Logos */
+header .header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .header-left img {
+    display: block;
+}
+
+header .header-left .logo-microsoft {
+    height: 22px;
+}
+
+header .header-left .logo-xbox {
+    height: 28px;
+}
+
+/* ============================
+   TELAS DE LOGIN/REGISTRO
+============================ */
+.auth-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.auth-form label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.auth-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-green {
+    background-color: #107C10;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.btn-green:hover {
+    background-color: #0e6a0e;
+}
+
+.auth-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.auth-link a {
+    color: #107C10;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}

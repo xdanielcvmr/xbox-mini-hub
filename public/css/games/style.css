@@ -1,0 +1,213 @@
+/* ============================
+   ESPAÇAMENTO E FONTE
+============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #111;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* ============================
+   CABEÇALHO
+============================ */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+}
+
+/* Logos */
+header .header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .header-left img {
+    display: block;
+}
+
+header .header-left .logo-microsoft {
+    height: 22px;
+}
+
+header .header-left .logo-xbox {
+    height: 28px;
+}
+
+/* Pesquisa */
+header .header-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header .search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 4px 12px;
+    width: 260px;
+    background-color: #fff;
+}
+
+header .search-form input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 6px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+header .search-form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Usuário */
+header .header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header .header-right .user-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+header .header-right .logout-form button {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 4px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+header .header-right .logout-form button:hover {
+    background: #f5f5f5;
+}
+
+/* ============================
+   CONTAINER DE JOGOS
+============================ */
+
+h1 {
+    padding: 20px;
+}
+
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin-top: 25px;
+}
+
+/* Cada card */
+.game-card {
+    text-align: center;
+    width: 180px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Capa */
+.game-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Nome do jogo */
+.game-card h3 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+/* ============================
+   BOTÃO "CARREGAR MAIS"
+============================ */
+#load-more {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #111;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin: 30px auto;
+    display: block;
+}
+
+#load-more:hover {
+    background-color: #333;
+}
+
+/* ============================
+   LINKS DE LOGIN / REGISTRO
+============================ */
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.auth-links a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    color: #111;
+    background-color: #fff;
+}
+
+.auth-links a:hover {
+    background-color: #f5f5f5;
+    border-color: #999;
+}
+
+.btn-admin {
+    background-color: #444;
+    color: #fff;
+    padding: 6px 14px;
+    margin-left: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.btn-admin:hover {
+    background-color: #222;
+}
